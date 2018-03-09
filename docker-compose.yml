@@ -1,0 +1,26 @@
+version: '2'
+services:
+  database:
+    image: mysql:5.7
+    container_name: rf_rest_api_db
+    volumes:
+      - dbdata:/var/lib/mysql
+    restart: always
+    ports:
+     - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+  api:
+    depends_on:
+      - database
+    restart: always
+    container_name: rf_rest_api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/var/www
+volumes:
+  dbdata:
