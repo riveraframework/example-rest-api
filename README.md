@@ -1,7 +1,7 @@
 Example - REST API
 ================
 
-This repository contains a working example of a basic REST API built with the Rivera Framework.
+This repository contains a working example of a basic REST API built with the [Rivera Framework](https://github.com/riveraframework/rf-core).
 
 ## Install
 
@@ -14,13 +14,18 @@ This example can be installed in two easy steps:
 2. Install the vendors
 
         php composer.phar install
+        
+3. Create the database
+
+    Create the database and import the `person.sql` file located in the `app/config` folder. Then update the application 
+    configuration file. (If you are using docker, please refer to the Docker section to start the MySQL server)
 
 
 ## Run the app
 
 ### LAMP stack on host
 
-1. Create a vhost pointing to the `public` folder of the project.
+1. Create a virtual host pointing to the `public` folder of the project.
 
 2. Open the url in your favorite browser!
 
