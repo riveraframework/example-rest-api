@@ -1,0 +1,16 @@
+{
+    "name": "riveraframework/example-rest-api",
+    "description": "REST API project using the Rivera Framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pierre-Julien MAZENOT",
+            "email": "pj.mazenot@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "riveraframework/rf-core": "dev-develop"
+    }
+}
